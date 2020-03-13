@@ -2,6 +2,7 @@ using System;
 using SwinGameSDK;
 using CardGames.GameLogic;
 //Lachlan McCaskill
+// hope to see conflict here
 namespace CardGames
 {
     public class SnapGame
