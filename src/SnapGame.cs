@@ -1,7 +1,7 @@
 using System;
 using SwinGameSDK;
 using CardGames.GameLogic;
-//Lachlan McCaskill
+//Lachlan McCaskill sdanjkshjdakjhj
 // hope to see conflict here
 namespace CardGames
 {
