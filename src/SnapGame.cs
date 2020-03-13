@@ -3,6 +3,8 @@ using SwinGameSDK;
 using CardGames.GameLogic;
 //Lachlan McCaskill sdanjkshjdakjhj
 // hope to see conflict here
+//jacks modification
+// hope to see conflict here
 namespace CardGames
 {
     public class SnapGame
