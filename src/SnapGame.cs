@@ -1,7 +1,7 @@
 using System;
 using SwinGameSDK;
 using CardGames.GameLogic;
-
+//jacks modification
 namespace CardGames
 {
     public class SnapGame
