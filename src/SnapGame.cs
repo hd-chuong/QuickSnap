@@ -12,6 +12,7 @@ namespace CardGames
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
             SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
 			SwinGame.LoadFontNamed("GameFont", "Chunkfive.otf", 12);
+			SwinGame.LoadSoundEffectNamed("Slap", "slap.wav");
 		}
 
 		/// <summary>
@@ -34,6 +35,7 @@ namespace CardGames
 				SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
 				{
 					//TODO: add sound effects
+					SwinGame.PlaySoundEffect ("Slap");
 				}
 				else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
 				{
@@ -45,7 +47,7 @@ namespace CardGames
 				}
 			}
 		}
-	}
+	
 
 		/// <summary>
 		/// Draws the game to the Window.
@@ -85,24 +87,24 @@ namespace CardGames
 			myGame.Update(); // just ask the game to do this...
 		}
 
-        public static void Main()
-        {
-            //Open the game window
-            SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
+		public static void Main()
+		{
+			//Open the game window
+			SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
 
 			//Load the card images and set their cell details
-            LoadResources();
-            
+			LoadResources();
+			
 			// Create the game!
 			Snap myGame = new Snap ();
 
-            //Run the game loop
-            while(false == SwinGame.WindowCloseRequested())
-            {
+			//Run the game loop
+			while(false == SwinGame.WindowCloseRequested())
+			{
 				HandleUserInput (myGame);
 				DrawGame (myGame);
 				UpdateGame (myGame);
-            }
-        }
-    }
+			}
+		}
+	}
 }
